@@ -17,7 +17,6 @@ const getAlbum = () =>{
     console.log(res2.photos)
    })
    .catch((err) =>{console.log(err)});
-
     
 }
 getAlbum();
@@ -27,9 +26,11 @@ getAlbum();
 function albumCard(input) {
     console.log(input);
     for ( const photo of input){
-        img = document.createElement("img");
-        img.src = photo.src.medium;
-        main.appendChild(img);
+        let img = document.createElement("img");
+        img.innerHTML = resjson.APIKey.img;
+        img.appendChild(img)
+        // img.src = photo.src.medium;
+        // document.main.appendChild(img);
     }
 
 }
