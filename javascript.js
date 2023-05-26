@@ -1,25 +1,6 @@
-const ApiUrl = "https://api.pexels.com/v1";
-const APIKey = "Nzko9a1jt52L7mcLauKoRCRApQDhFHcIlaMI1clvwRxXYz1RTG0TLWnX";
-const card = document.getElementById("main")
+ //! 1) fare chiamata ajax
 
 
-// //! 1) fare chiamata ajax
-
-// const getAlbum = () =>{
-//     fetch(ApiUrl + "/search?query=TRAVEL", {
-//         headers: {
-//              Authorization: APIKey }
-//     })
-//    .then((res) => {
-//     return res.json()
-//    })
-//    .then((res2) => {
-//     console.log(res2.photos)
-//    })
-//    .catch((err) =>{console.log("Hai un errore:" + err)});
-    
-// }
-// getAlbum();
 const apiurl = "https://api.pexels.com/v1";
 const apiKey = "Nzko9a1jt52L7mcLauKoRCRApQDhFHcIlaMI1clvwRxXYz1RTG0TLWnX";
 const albumContainer = document.getElementById("album-container");
@@ -68,7 +49,7 @@ const albumCard = (photos) => {
 
 }
 
-
+getAlbum();
 
 
 
@@ -95,6 +76,6 @@ const albumCard = (photos) => {
 
 
 
-getAlbum();
+
 
   
